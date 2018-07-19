@@ -22,11 +22,13 @@ class EdgeDetectionViewController: UIViewController {
     @IBOutlet weak var sourceImageView: UIImageView!
     @IBOutlet weak var grayScaleImageView: UIImageView!
     @IBOutlet weak var detectedEdgeImageView: UIImageView!
+    @IBOutlet weak var processImageButton: UIButton!
+    
     let openCV = OpenCVWrapper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.settingForView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,3 +55,8 @@ class EdgeDetectionViewController: UIViewController {
     }
 }
 
+extension EdgeDetectionViewController {
+    func settingForView() -> Void {
+        self.processImageButton.layer.cornerRadius = self.processImageButton.bounds.height / 2.0
+    }
+}
