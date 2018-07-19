@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3910C35520F9D67700937A9E /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3910C35420F9D67700937A9E /* Menu.storyboard */; };
 		39F0A77220F639A000D1AB7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A77120F639A000D1AB7B /* AppDelegate.swift */; };
-		39F0A77420F639A000D1AB7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A77320F639A000D1AB7B /* ViewController.swift */; };
-		39F0A77720F639A000D1AB7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F0A77520F639A000D1AB7B /* Main.storyboard */; };
+		39F0A77420F639A000D1AB7B /* EdgeDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A77320F639A000D1AB7B /* EdgeDetectionViewController.swift */; };
+		39F0A77720F639A000D1AB7B /* EdgeDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F0A77520F639A000D1AB7B /* EdgeDetection.storyboard */; };
 		39F0A77920F639A100D1AB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F0A77820F639A100D1AB7B /* Assets.xcassets */; };
 		39F0A77C20F639A100D1AB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F0A77A20F639A100D1AB7B /* LaunchScreen.storyboard */; };
+		39F0A78420F63EB600D1AB7B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F0A78320F63EB600D1AB7B /* opencv2.framework */; };
+		39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3910C35420F9D67700937A9E /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		39F0A76E20F639A000D1AB7B /* opencvTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencvTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F0A77120F639A000D1AB7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39F0A77320F639A000D1AB7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		39F0A77620F639A000D1AB7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39F0A77320F639A000D1AB7B /* EdgeDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeDetectionViewController.swift; sourceTree = "<group>"; };
+		39F0A77620F639A000D1AB7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EdgeDetection.storyboard; sourceTree = "<group>"; };
 		39F0A77820F639A100D1AB7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39F0A77B20F639A100D1AB7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39F0A77D20F639A100D1AB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F0A78320F63EB600D1AB7B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencvTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F0A78420F63EB600D1AB7B /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +64,16 @@
 			isa = PBXGroup;
 			children = (
 				39F0A77120F639A000D1AB7B /* AppDelegate.swift */,
-				39F0A77320F639A000D1AB7B /* ViewController.swift */,
-				39F0A77520F639A000D1AB7B /* Main.storyboard */,
+				39F0A77320F639A000D1AB7B /* EdgeDetectionViewController.swift */,
+				39F0A77520F639A000D1AB7B /* EdgeDetection.storyboard */,
+				3910C35420F9D67700937A9E /* Menu.storyboard */,
 				39F0A77820F639A100D1AB7B /* Assets.xcassets */,
 				39F0A77A20F639A100D1AB7B /* LaunchScreen.storyboard */,
 				39F0A77D20F639A100D1AB7B /* Info.plist */,
+				39F0A78320F63EB600D1AB7B /* opencv2.framework */,
+				39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */,
+				39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */,
+				39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */,
 			);
 			path = opencvTest;
 			sourceTree = "<group>";
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					39F0A76D20F639A000D1AB7B = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -124,7 +139,8 @@
 			files = (
 				39F0A77C20F639A100D1AB7B /* LaunchScreen.storyboard in Resources */,
 				39F0A77920F639A100D1AB7B /* Assets.xcassets in Resources */,
-				39F0A77720F639A000D1AB7B /* Main.storyboard in Resources */,
+				39F0A77720F639A000D1AB7B /* EdgeDetection.storyboard in Resources */,
+				3910C35520F9D67700937A9E /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,20 +151,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39F0A77420F639A000D1AB7B /* ViewController.swift in Sources */,
+				39F0A77420F639A000D1AB7B /* EdgeDetectionViewController.swift in Sources */,
 				39F0A77220F639A000D1AB7B /* AppDelegate.swift in Sources */,
+				39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		39F0A77520F639A000D1AB7B /* Main.storyboard */ = {
+		39F0A77520F639A000D1AB7B /* EdgeDetection.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				39F0A77620F639A000D1AB7B /* Base */,
 			);
-			name = Main.storyboard;
+			name = EdgeDetection.storyboard;
 			sourceTree = "<group>";
 		};
 		39F0A77A20F639A100D1AB7B /* LaunchScreen.storyboard */ = {
@@ -280,14 +297,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HTXH4JRSA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvTest",
+				);
 				INFOPLIST_FILE = opencvTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hogehogeuser.opencvTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "opencvTest/opencvTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,14 +325,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HTXH4JRSA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvTest",
+				);
 				INFOPLIST_FILE = opencvTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hogehogeuser.opencvTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "opencvTest/opencvTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
