@@ -20,8 +20,9 @@ class MenuViewController : UIViewController {
     
     // Buttons
     @IBAction func touchEdgeDetectionButton(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "EdgeDetection") else {
-            print("** cannot move to another screen")
+        let storyboard = UIStoryboard(name: "EdgeDetection", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() as? EdgeDetectionViewController else {
+            print("failed to instantiate initial view controller")
             return
         }
         self.present(vc, animated: true) {
