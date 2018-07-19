@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tlW-ic-zET">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="sbT-aG-4q4">
+            <objects>
+                <viewController storyboardIdentifier="Menu" id="tlW-ic-zET" customClass="MenuViewController" customModule="opencvTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fB5-aa-WNe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-PS-2Cu">
+                                <rect key="frame" x="112.5" y="180" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NqU-cq-kUV"/>
+                                    <constraint firstAttribute="width" constant="150" id="fgS-tP-MD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Edge Detection">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchEdgeDetectionButton:" destination="tlW-ic-zET" eventType="touchUpInside" id="Pw0-RZ-Mwv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenCV Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQf-Zs-bY8">
+                                <rect key="frame" x="87.5" y="100" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3rF-9c-yVE"/>
+                                    <constraint firstAttribute="height" constant="30" id="BZG-4c-iXG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OQf-Zs-bY8" firstAttribute="top" secondItem="bbW-NC-4IP" secondAttribute="top" constant="80" id="1VM-bD-302"/>
+                            <constraint firstItem="bbW-NC-4IP" firstAttribute="centerX" secondItem="OQf-Zs-bY8" secondAttribute="centerX" id="Hhq-WS-Isx"/>
+                            <constraint firstItem="hIt-PS-2Cu" firstAttribute="centerX" secondItem="bbW-NC-4IP" secondAttribute="centerX" id="biD-go-CXJ"/>
+                            <constraint firstItem="hIt-PS-2Cu" firstAttribute="top" secondItem="OQf-Zs-bY8" secondAttribute="bottom" constant="50" id="mg3-bV-CcX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bbW-NC-4IP"/>
+                    </view>
+                    <connections>
+                        <outlet property="edgeDetectionButton" destination="hIt-PS-2Cu" id="jyE-xa-2YO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFO-Q1-zKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="126"/>
+        </scene>
+    </scenes>
+</document>

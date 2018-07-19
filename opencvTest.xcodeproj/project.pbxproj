@@ -15,6 +15,7 @@
 		39F0A77C20F639A100D1AB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F0A77A20F639A100D1AB7B /* LaunchScreen.storyboard */; };
 		39F0A78420F63EB600D1AB7B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F0A78320F63EB600D1AB7B /* opencv2.framework */; };
 		39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */; };
+		731941012100B1310044E22D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731941002100B1310044E22D /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencvTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		731941002100B1310044E22D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				39F0A77320F639A000D1AB7B /* EdgeDetectionViewController.swift */,
 				39F0A77520F639A000D1AB7B /* EdgeDetection.storyboard */,
 				3910C35420F9D67700937A9E /* Menu.storyboard */,
+				731941002100B1310044E22D /* MenuViewController.swift */,
 				39F0A77820F639A100D1AB7B /* Assets.xcassets */,
 				39F0A77A20F639A100D1AB7B /* LaunchScreen.storyboard */,
 				39F0A77D20F639A100D1AB7B /* Info.plist */,
@@ -154,6 +157,7 @@
 				39F0A77420F639A000D1AB7B /* EdgeDetectionViewController.swift in Sources */,
 				39F0A77220F639A000D1AB7B /* AppDelegate.swift in Sources */,
 				39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */,
+				731941012100B1310044E22D /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
