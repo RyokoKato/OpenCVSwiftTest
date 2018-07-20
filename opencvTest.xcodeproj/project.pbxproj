@@ -16,7 +16,6 @@
 		39F0A78420F63EB600D1AB7B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F0A78320F63EB600D1AB7B /* opencv2.framework */; };
 		39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */; };
 		731941012100B1310044E22D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731941002100B1310044E22D /* MenuViewController.swift */; };
-		73B3FE97210210E0002CE47D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B3FE96210210E0002CE47D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		731941002100B1310044E22D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		73B3FE96210210E0002CE47D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +49,6 @@
 		39F0A76520F639A000D1AB7B = {
 			isa = PBXGroup;
 			children = (
-				73B3FE96210210E0002CE47D /* Default-568h@2x.png */,
 				39F0A77020F639A000D1AB7B /* opencvTest */,
 				39F0A76F20F639A000D1AB7B /* Products */,
 			);
@@ -76,6 +73,8 @@
 				39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */,
 				39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */,
 				39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */,
+				39F0A77D20F639A100D1AB7B /* Info.plist */,
+				39F0A77120F639A000D1AB7B /* AppDelegate.swift */,
 			);
 			path = opencvTest;
 			sourceTree = "<group>";
@@ -83,7 +82,6 @@
 		73B3FE9021020F26002CE47D /* ViewParts */ = {
 			isa = PBXGroup;
 			children = (
-				730C49232101E2B7003B7DFA /* UIButtonExtension.swift */,
 			);
 			path = ViewParts;
 			sourceTree = "<group>";
@@ -100,8 +98,6 @@
 		73B3FE9321020FAB002CE47D /* SharedObject */ = {
 			isa = PBXGroup;
 			children = (
-				39F0A77120F639A000D1AB7B /* AppDelegate.swift */,
-				39F0A77D20F639A100D1AB7B /* Info.plist */,
 			);
 			path = SharedObject;
 			sourceTree = "<group>";
@@ -195,7 +191,6 @@
 				39F0A77C20F639A100D1AB7B /* LaunchScreen.storyboard in Resources */,
 				39F0A77920F639A100D1AB7B /* Assets.xcassets in Resources */,
 				39F0A77720F639A000D1AB7B /* EdgeDetection.storyboard in Resources */,
-				73B3FE97210210E0002CE47D /* Default-568h@2x.png in Resources */,
 				3910C35520F9D67700937A9E /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
