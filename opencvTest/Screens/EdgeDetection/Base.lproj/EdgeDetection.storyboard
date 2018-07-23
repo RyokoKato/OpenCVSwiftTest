@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3MX-Pn-IsB"/>
-                                    <constraint firstAttribute="width" constant="180" id="EeH-ow-N0U"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="EeH-ow-N0U"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Process Image">
