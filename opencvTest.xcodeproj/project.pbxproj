@@ -16,6 +16,8 @@
 		39F0A78420F63EB600D1AB7B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F0A78320F63EB600D1AB7B /* opencv2.framework */; };
 		39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */; };
 		730C49242101E2B7003B7DFA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C49232101E2B7003B7DFA /* UIButtonExtension.swift */; };
+		730EE424210608C100CAB25A /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730EE423210608C100CAB25A /* ButtonStyles.swift */; };
+		730EE4262106098900CAB25A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730EE4252106098900CAB25A /* ColorExtension.swift */; };
 		731941012100B1310044E22D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731941002100B1310044E22D /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		730C49232101E2B7003B7DFA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		730EE423210608C100CAB25A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		730EE4252106098900CAB25A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		731941002100B1310044E22D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 				73BA4C1821020E9B00F5832B /* Screens */,
 				73B3FE9021020F26002CE47D /* ViewParts */,
 				73B3FE9121020F39002CE47D /* Resources */,
+				730EE4222106089200CAB25A /* Models */,
 				73B3FE9321020FAB002CE47D /* SharedObject */,
 				39F0A78320F63EB600D1AB7B /* opencv2.framework */,
 				39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */,
@@ -80,6 +85,15 @@
 				730C49232101E2B7003B7DFA /* UIButtonExtension.swift */,
 			);
 			path = opencvTest;
+			sourceTree = "<group>";
+		};
+		730EE4222106089200CAB25A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				730EE423210608C100CAB25A /* ButtonStyles.swift */,
+				730EE4252106098900CAB25A /* ColorExtension.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		73B3FE9021020F26002CE47D /* ViewParts */ = {
@@ -208,6 +222,8 @@
 				39F0A77420F639A000D1AB7B /* EdgeDetectionViewController.swift in Sources */,
 				730C49242101E2B7003B7DFA /* UIButtonExtension.swift in Sources */,
 				39F0A77220F639A000D1AB7B /* AppDelegate.swift in Sources */,
+				730EE4262106098900CAB25A /* ColorExtension.swift in Sources */,
+				730EE424210608C100CAB25A /* ButtonStyles.swift in Sources */,
 				39F0A78820F63F5900D1AB7B /* OpenCVWrapper.mm in Sources */,
 				731941012100B1310044E22D /* MenuViewController.swift in Sources */,
 			);
