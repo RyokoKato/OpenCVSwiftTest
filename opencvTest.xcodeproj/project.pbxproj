@@ -34,7 +34,7 @@
 		39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencvTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		39F0A78620F63F5900D1AB7B /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		39F0A78720F63F5900D1AB7B /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
-		730C49232101E2B7003B7DFA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		730C49232101E2B7003B7DFA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = ../UIButtonExtension.swift; sourceTree = "<group>"; };
 		730EE423210608C100CAB25A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		730EE4252106098900CAB25A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		731941002100B1310044E22D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 				39F0A78520F63F5800D1AB7B /* opencvTest-Bridging-Header.h */,
 				39F0A77D20F639A100D1AB7B /* Info.plist */,
 				39F0A77120F639A000D1AB7B /* AppDelegate.swift */,
-				730C49232101E2B7003B7DFA /* UIButtonExtension.swift */,
 			);
 			path = opencvTest;
 			sourceTree = "<group>";
@@ -99,6 +98,7 @@
 		73B3FE9021020F26002CE47D /* ViewParts */ = {
 			isa = PBXGroup;
 			children = (
+				730C49232101E2B7003B7DFA /* UIButtonExtension.swift */,
 			);
 			path = ViewParts;
 			sourceTree = "<group>";
