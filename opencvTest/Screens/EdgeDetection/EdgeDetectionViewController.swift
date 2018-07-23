@@ -22,8 +22,8 @@ class EdgeDetectionViewController: UIViewController {
     @IBOutlet weak var sourceImageView: UIImageView!
     @IBOutlet weak var grayScaleImageView: UIImageView!
     @IBOutlet weak var detectedEdgeImageView: UIImageView!
-    @IBOutlet weak var processImageButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var processImageButton: CustomButton!
+    @IBOutlet weak var resetButton: CustomButton!
     
     let openCV = OpenCVWrapper()
     
@@ -38,7 +38,6 @@ class EdgeDetectionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func processImageButtonDidTouch(_ sender: Any) {
@@ -64,8 +63,8 @@ class EdgeDetectionViewController: UIViewController {
 // TODO: write buttons setting using UIButton Extension(I think I wrote...)
 extension EdgeDetectionViewController {
     fileprivate func settingForView() -> Void {
-        self.processImageButton.layer.cornerRadius = self.processImageButton.bounds.height / 2.0
-        self.resetButton.layer.cornerRadius = self.processImageButton.bounds.height / 2.0
+        self.resetButton.setButtonStyle(buttonStyle: .resetButton)
+        self.processImageButton.setButtonStyle(buttonStyle: .processButton)
     }
     
     fileprivate func resetImage() -> Void {
