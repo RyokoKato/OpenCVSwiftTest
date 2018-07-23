@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,98 +14,142 @@
             <objects>
                 <viewController storyboardIdentifier="EdgeDetection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EdgeDetectionViewController" customModule="opencvTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-0N-ocm">
-                                <rect key="frame" x="70" y="502" width="180" height="40"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3MX-Pn-IsB"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="EeH-ow-N0U"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Process Image">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushMeButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYk-8t-1EH"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-jx-ahK" userLabel="StackView">
-                                <rect key="frame" x="32" y="35" width="256" height="444.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="51p-Ki-nwt" userLabel="SourceStackView">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="128"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vp0-1s-rwE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+s                                <subviews>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="752-Sg-xp1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="734"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37X-pm-RqE">
-                                                <rect key="frame" x="0.0" y="54.5" width="128" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lenna" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-Oa-E9a">
-                                                <rect key="frame" x="128" y="0.0" width="128" height="128"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="V1B-nL-xc8"/>
-                                                    <constraint firstAttribute="width" constant="128" id="zTc-c0-m8p"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="4VD-Oa-E9a" firstAttribute="leading" secondItem="37X-pm-RqE" secondAttribute="trailing" id="V5i-I9-UGb"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wzn-qU-mPy" userLabel="GrayScaleStaciView">
-                                        <rect key="frame" x="0.0" y="158" width="256" height="128.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrayScale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-P8-odD">
-                                                <rect key="frame" x="0.0" y="54.5" width="128" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-sf-hdb">
-                                                <rect key="frame" x="128" y="0.0" width="128" height="128.5"/>
-                                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="0bn-WM-Hkw"/>
-                                                    <constraint firstAttribute="width" constant="128" id="aAH-tF-QBL"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-dd-97v" userLabel="EdgeDetectionStacView">
-                                        <rect key="frame" x="0.0" y="316.5" width="256" height="128"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-cc-Drg">
-                                                <rect key="frame" x="0.0" y="42.5" width="128" height="43"/>
-                                                <string key="text">CannyEdge
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-jx-ahK" userLabel="StackView">
+                                                <rect key="frame" x="20.5" y="20" width="279.5" height="694"/>
+                                                <subviews>
+                                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="51p-Ki-nwt" userLabel="SourceStackView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279.5" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37X-pm-RqE">
+                                                                <rect key="frame" x="0.0" y="54.5" width="121.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lenna" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-Oa-E9a">
+                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="128" id="V1B-nL-xc8"/>
+                                                                    <constraint firstAttribute="width" constant="128" id="zTc-c0-m8p"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wzn-qU-mPy" userLabel="GrayScaleStaciView">
+                                                        <rect key="frame" x="0.0" y="198" width="279.5" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrayScale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-P8-odD">
+                                                                <rect key="frame" x="0.0" y="54.5" width="121.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-sf-hdb">
+                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="128" id="0bn-WM-Hkw"/>
+                                                                    <constraint firstAttribute="width" constant="128" id="aAH-tF-QBL"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-dd-97v" userLabel="EdgeDetectionStacView">
+                                                        <rect key="frame" x="0.0" y="396" width="279.5" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-cc-Drg">
+                                                                <rect key="frame" x="0.0" y="42.5" width="121.5" height="43"/>
+                                                                <string key="text">CannyEdge
 Detection</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-KV-99K">
-                                                <rect key="frame" x="128" y="0.0" width="128" height="128"/>
-                                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="128" id="sQ3-lC-Y5P"/>
-                                                    <constraint firstAttribute="height" constant="128" id="x8U-4S-57Y"/>
-                                                </constraints>
-                                            </imageView>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-KV-99K">
+                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="128" id="sQ3-lC-Y5P"/>
+                                                                    <constraint firstAttribute="height" constant="128" id="x8U-4S-57Y"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-Fj-QMY">
+                                                        <rect key="frame" x="0.0" y="594" width="279.5" height="100"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-0N-ocm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="279.5" height="40"/>
+                                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="3MX-Pn-IsB"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="EeH-ow-N0U"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <state key="normal" title="Process Image">
+                                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="processImageButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYK-on-DEH"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ls-Ix-IYf" userLabel="Reset Button">
+                                                                <rect key="frame" x="0.0" y="60" width="279.5" height="40"/>
+                                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="7h9-0f-5DQ"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="nlj-CT-ShU"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <state key="normal" title="Reset">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="resetButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGf-py-g4Q"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YQt-jx-ahK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="752-Sg-xp1" secondAttribute="leading" constant="20" id="WWv-ZW-z7M"/>
+                                            <constraint firstItem="YQt-jx-ahK" firstAttribute="top" secondItem="752-Sg-xp1" secondAttribute="top" constant="20" id="gfP-Cq-lZg"/>
+                                            <constraint firstAttribute="bottom" secondItem="YQt-jx-ahK" secondAttribute="bottom" constant="20" id="gvM-8V-65h"/>
+                                            <constraint firstAttribute="height" constant="734" id="ioy-xg-CxS"/>
+                                            <constraint firstAttribute="centerX" secondItem="YQt-jx-ahK" secondAttribute="centerX" id="s9r-ny-MzF"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YQt-jx-ahK" secondAttribute="trailing" constant="20" id="xFs-8l-ISo"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="752-Sg-xp1" secondAttribute="trailing" id="AXd-hO-sgL"/>
+                                    <constraint firstItem="752-Sg-xp1" firstAttribute="width" secondItem="vp0-1s-rwE" secondAttribute="width" id="X4g-1b-Nkl"/>
+                                    <constraint firstAttribute="bottom" secondItem="752-Sg-xp1" secondAttribute="bottom" id="oyM-xz-gja"/>
+                                    <constraint firstItem="752-Sg-xp1" firstAttribute="top" secondItem="vp0-1s-rwE" secondAttribute="top" id="tbb-Mf-S4W"/>
+                                    <constraint firstItem="752-Sg-xp1" firstAttribute="leading" secondItem="vp0-1s-rwE" secondAttribute="leading" id="yX8-7e-pkc"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cVb-0N-ocm" secondAttribute="centerX" id="Bwr-XJ-lFa"/>
-                            <constraint firstItem="cVb-0N-ocm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-66" id="GJL-5b-sA3"/>
-                            <constraint firstItem="YQt-jx-ahK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Qmw-Kc-D2c"/>
-                            <constraint firstItem="YQt-jx-ahK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c71-vI-WFU"/>
+                            <constraint firstItem="vp0-1s-rwE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BN7-Fc-Ufe"/>
+                            <constraint firstItem="vp0-1s-rwE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Xc4-Il-RNu"/>
+                            <constraint firstItem="vp0-1s-rwE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eat-cF-fbi"/>
+                            <constraint firstItem="vp0-1s-rwE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mXu-ny-WS3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -113,6 +157,7 @@ Detection</string>
                         <outlet property="detectedEdgeImageView" destination="GbO-KV-99K" id="DQy-Mh-lUi"/>
                         <outlet property="grayScaleImageView" destination="s2e-sf-hdb" id="kUC-PZ-QdM"/>
                         <outlet property="processImageButton" destination="cVb-0N-ocm" id="sJQ-xI-pZa"/>
+                        <outlet property="resetButton" destination="8ls-Ix-IYf" id="PTj-Sx-qUY"/>
                         <outlet property="sourceImageView" destination="4VD-Oa-E9a" id="cLH-WC-1wU"/>
                     </connections>
                 </viewController>
