@@ -53,11 +53,7 @@ class EdgeDetectionViewController: UIViewController {
     
     @IBAction func resetButtonDidTouch(_ sender: Any) {
         resetImage()
-    }
-    
-    private func opencvTest(){
-        
-    }
+    }    
 }
 
 // TODO: write buttons setting using UIButton Extension(I think I wrote...)
