@@ -122,8 +122,8 @@
 		73B3FE9421021047002CE47D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				3910C35420F9D67700937A9E /* Menu.storyboard */,
 				731941002100B1310044E22D /* MenuViewController.swift */,
+				3910C35420F9D67700937A9E /* Menu.storyboard */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
