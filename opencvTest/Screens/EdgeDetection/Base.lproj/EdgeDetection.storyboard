@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,29 +14,29 @@
             <objects>
                 <viewController storyboardIdentifier="EdgeDetection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EdgeDetectionViewController" customModule="opencvTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vp0-1s-rwE">
-                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="752-Sg-xp1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="734"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-jx-ahK" userLabel="StackView">
-                                                <rect key="frame" x="20.5" y="20" width="279.5" height="694"/>
+                                                <rect key="frame" x="64.333333333333314" y="20" width="286" height="694"/>
                                                 <subviews>
                                                     <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="51p-Ki-nwt" userLabel="SourceStackView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="279.5" height="128"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="128"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37X-pm-RqE">
-                                                                <rect key="frame" x="0.0" y="54.5" width="121.5" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="54.333333333333329" width="128" height="19.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lenna" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-Oa-E9a">
-                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG000" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-Oa-E9a">
+                                                                <rect key="frame" x="158" y="0.0" width="128" height="128"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="128" id="V1B-nL-xc8"/>
                                                                     <constraint firstAttribute="width" constant="128" id="zTc-c0-m8p"/>
@@ -44,17 +44,17 @@
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wzn-qU-mPy" userLabel="GrayScaleStaciView">
-                                                        <rect key="frame" x="0.0" y="198" width="279.5" height="128"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wzn-qU-mPy" userLabel="GrayScaleStackiView">
+                                                        <rect key="frame" x="0.0" y="184.66666666666666" width="286" height="127.99999999999997"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrayScale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-P8-odD">
-                                                                <rect key="frame" x="0.0" y="54.5" width="121.5" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="54.33333333333335" width="128" height="19.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-sf-hdb">
-                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="158" y="0.0" width="128" height="128"/>
                                                                 <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="128" id="0bn-WM-Hkw"/>
@@ -63,11 +63,11 @@
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-dd-97v" userLabel="EdgeDetectionStacView">
-                                                        <rect key="frame" x="0.0" y="396" width="279.5" height="128"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-dd-97v" userLabel="EdgeDetectionStackView">
+                                                        <rect key="frame" x="0.0" y="369.33333333333331" width="286" height="128"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-cc-Drg">
-                                                                <rect key="frame" x="0.0" y="42.5" width="121.5" height="43"/>
+                                                                <rect key="frame" x="0.0" y="42.666666666666686" width="128" height="43"/>
                                                                 <string key="text">CannyEdge
 Detection</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -75,7 +75,7 @@ Detection</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-KV-99K">
-                                                                <rect key="frame" x="151.5" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="158" y="0.0" width="128" height="128"/>
                                                                 <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="128" id="sQ3-lC-Y5P"/>
@@ -84,37 +84,41 @@ Detection</string>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-Fj-QMY">
-                                                        <rect key="frame" x="0.0" y="594" width="279.5" height="100"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-Fj-QMY" userLabel="ButtonStackView">
+                                                        <rect key="frame" x="0.0" y="554" width="286" height="140"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-0N-ocm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="279.5" height="40"/>
-                                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="3MX-Pn-IsB"/>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="EeH-ow-N0U"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                <state key="normal" title="Process Image">
-                                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Process Image"/>
                                                                 <connections>
                                                                     <action selector="processImageButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYK-on-DEH"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q78-83-knY" userLabel="ChangeImage Button" customClass="CustomButton" customModule="opencvTest" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="50" width="286" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="RB4-IQ-mvx"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="heC-0V-ijb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Change Image"/>
+                                                                <connections>
+                                                                    <action selector="changeImageButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gE-lI-HrQ"/>
+                                                                </connections>
+                                                            </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ls-Ix-IYf" userLabel="Reset Button">
-                                                                <rect key="frame" x="0.0" y="60" width="279.5" height="40"/>
-                                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="0.0" y="100" width="286" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="7h9-0f-5DQ"/>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="nlj-CT-ShU"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                <state key="normal" title="Reset">
-                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Reset"/>
                                                                 <connections>
                                                                     <action selector="resetButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGf-py-g4Q"/>
                                                                 </connections>
@@ -154,6 +158,7 @@ Detection</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="changeImageButton" destination="Q78-83-knY" id="Qwx-cw-Kka"/>
                         <outlet property="detectedEdgeImageView" destination="GbO-KV-99K" id="DQy-Mh-lUi"/>
                         <outlet property="grayScaleImageView" destination="s2e-sf-hdb" id="kUC-PZ-QdM"/>
                         <outlet property="processImageButton" destination="cVb-0N-ocm" id="sJQ-xI-pZa"/>
@@ -167,6 +172,6 @@ Detection</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Lenna" width="75" height="75"/>
+        <image name="IMG000" width="75" height="75"/>
     </resources>
 </document>
