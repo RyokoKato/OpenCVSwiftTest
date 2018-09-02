@@ -27,6 +27,8 @@ class EdgeDetectionViewController: UIViewController {
     @IBOutlet weak var changeImageButton: CustomButton!
     
     let openCV = OpenCVWrapper()
+    
+    let maxImgCounter: Int = 2
     var imgCounter: Int = 0
     
     // MARK: - Life Cycle
@@ -57,8 +59,9 @@ class EdgeDetectionViewController: UIViewController {
     
     // TODO: implement transition to modal view
     @IBAction func changeImageButtonDidTouch(_ sender: Any) {
-        self.imgCounter += 1
+        self.imgCounter = (self.imgCounter + 1) % 2
         self.sourceImageView.image = UIImage(named: "IMG\(String(format: "%03d", self.imgCounter))")
+        resetImage()
     }
     
     @IBAction func resetButtonDidTouch(_ sender: Any) {

@@ -99,7 +99,7 @@ Detection</string>
                                                                     <action selector="processImageButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYK-on-DEH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q78-83-knY" userLabel="ChangeImage Button" customClass="CustomButton" customModule="opencvTest" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q78-83-knY" userLabel="ChangeImage Button">
                                                                 <rect key="frame" x="0.0" y="50" width="286" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="RB4-IQ-mvx"/>
