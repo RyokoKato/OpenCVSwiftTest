@@ -24,11 +24,17 @@ class EdgeDetectionViewController: UIViewController {
     @IBOutlet weak var detectedEdgeImageView: UIImageView!
     @IBOutlet weak var processImageButton: CustomButton!
     @IBOutlet weak var resetButton: CustomButton!
+    @IBOutlet weak var changeImageButton: CustomButton!
     
     let openCV = OpenCVWrapper()
     
+    let maxImgCounter: Int = 2
+    var imgCounter: Int = 0
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imgCounter = 0
         self.settingForView()
     }
     
@@ -51,6 +57,13 @@ class EdgeDetectionViewController: UIViewController {
         detectedEdgeImageView.image = detectedEdgeImg
     }
     
+    // TODO: implement transition to modal view
+    @IBAction func changeImageButtonDidTouch(_ sender: Any) {
+        self.imgCounter = (self.imgCounter + 1) % 2
+        self.sourceImageView.image = UIImage(named: "IMG\(String(format: "%03d", self.imgCounter))")
+        resetImage()
+    }
+    
     @IBAction func resetButtonDidTouch(_ sender: Any) {
         resetImage()
     }    
@@ -59,12 +72,13 @@ class EdgeDetectionViewController: UIViewController {
 // TODO: write buttons setting using UIButton Extension(I think I wrote...)
 extension EdgeDetectionViewController {
     fileprivate func settingForView() -> Void {
-        self.resetButton.setButtonStyle(buttonStyle: .resetButton)
         self.processImageButton.setButtonStyle(buttonStyle: .processButton)
+        self.changeImageButton.setButtonStyle(buttonStyle: .processButton)
+        self.resetButton.setButtonStyle(buttonStyle: .resetButton)
     }
     
     fileprivate func resetImage() -> Void {
-        self.sourceImageView.image = #imageLiteral(resourceName: "Lenna")
+        self.sourceImageView.image = UIImage(named: "IMG\(String(format: "%03d", self.imgCounter))")
         self.grayScaleImageView.image = nil
         self.detectedEdgeImageView.image = nil
     }
